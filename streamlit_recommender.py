@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Sep 22 15:36:59 2023
-
-@author: sidpa
-"""
-
 import streamlit as st
 import pandas as pd
 
@@ -15,6 +8,7 @@ st.markdown(
     body {
         background-color: black;
         color: white;
+        padding: 20px; /* Add padding to increase spacing between elements */
     }
     </style>
     """,
@@ -34,9 +28,10 @@ st.markdown(
 
 # Create an input box for entering the movie or show name
 movie_name = st.text_input(
-    "Enter Movie/Show Here",
-    "Type the name of a movie or show...",
+    "Enter Movie/Show Here",  # Placeholder text
+    "",  # Default value (empty string)
     key="movie_name_input",
+    type="default",  # Type of input box
 )
 
 # Set the border color of the input box to Netflix red theme color
@@ -53,5 +48,13 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Display recommendations based on the entered movie or show name (you'll need to implement this part)
+# Add spacing between the input box and the button
+st.write("")  # Add an empty line for spacing
 
+# # Display recommendations based on the entered movie or show name (you'll need to implement this part)
+# if st.button("Get Recommendations"):
+#     # Call your recommender function here and display recommendations
+#     recommendations = get_recommendations(movie_name)
+#     st.subheader("Recommended Movies/Shows:")
+#     for recommendation in recommendations:
+#         st.write(recommendation)
