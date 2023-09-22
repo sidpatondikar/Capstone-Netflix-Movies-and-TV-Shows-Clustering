@@ -10,6 +10,9 @@ st.markdown(
         color: white;
         padding: 20px; /* Add padding to increase spacing between elements */
     }
+    input[type="text"]::placeholder {
+        color: #F0F0F0; /* Off-white color for the placeholder text */
+    }
     </style>
     """,
     unsafe_allow_html=True,
