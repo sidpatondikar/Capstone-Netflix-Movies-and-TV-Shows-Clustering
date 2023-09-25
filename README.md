@@ -1,5 +1,11 @@
 # Capstone-Netflix-Movies-and-TV-Shows-Clustering
 
+## Recommender System App : Deployed
+https://netflix-recommender-system-sidpatondikar.streamlit.app/
+
+
+-------------------------------------------------------------------
+
 ![netflix-1658388017](https://github.com/sidpatondikar/Capstone-Netflix-Movies-and-TV-Shows-Clustering/assets/83869822/d5e625a9-ef50-48c5-9697-ca25dcdb92cd)
 
 
